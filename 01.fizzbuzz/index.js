@@ -1,16 +1,15 @@
 'use strict';
 
-const fizzBuzz = (function() {
-  const createArrayTwentyNumbers = [...Array(20).keys()].map((i) => ++i);
-  createArrayTwentyNumbers.forEach((number) => {
+(function () {
+  [...Array(20).keys()].map((i) => ++i).forEach((number) => {
     if (number % 15 === 0) {
-      console.log('fizzbuzz');
+      console.log('fizzbuzz')
     } else if (number % 5 === 0) {
-      console.log('Buzz');
+      console.log('Buzz')
     } else if (number % 3 === 0) {
-      console.log('Fizz');
+      console.log('Fizz')
     } else {
-      console.log(number);
+      console.log(number)
     }
-  });
-})();
+  })
+})()
